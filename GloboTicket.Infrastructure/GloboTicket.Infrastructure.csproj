@@ -9,6 +9,7 @@
   <ItemGroup>
 	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
     <ProjectReference Include="..\GloboTicket.Domain\GloboTicket.Domain.csproj" />
+    <ProjectReference Include="..\GloboTicket.SharedKernel\GloboTicket.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>
