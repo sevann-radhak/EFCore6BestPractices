@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.Domain", "GloboTicket.Domain\GloboTicket.Domain.csproj", "{864E8880-B6F7-4A98-8EF7-56858B55C64B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.Infrastructure", "GloboTicket.Infrastructure\GloboTicket.Infrastructure.csproj", "{EC4B5034-80E7-41B7-94CF-6CBF017E304A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.Infrastructure", "GloboTicket.Infrastructure\GloboTicket.Infrastructure.csproj", "{EC4B5034-80E7-41B7-94CF-6CBF017E304A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.API", "GloboTicket.API\GloboTicket.API.csproj", "{9ABD32F4-2AA5-4142-BC83-0017F76A5725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EC4B5034-80E7-41B7-94CF-6CBF017E304A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC4B5034-80E7-41B7-94CF-6CBF017E304A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC4B5034-80E7-41B7-94CF-6CBF017E304A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABD32F4-2AA5-4142-BC83-0017F76A5725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABD32F4-2AA5-4142-BC83-0017F76A5725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABD32F4-2AA5-4142-BC83-0017F76A5725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABD32F4-2AA5-4142-BC83-0017F76A5725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
