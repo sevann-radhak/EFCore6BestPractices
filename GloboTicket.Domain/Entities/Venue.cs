@@ -2,7 +2,9 @@
 {
     public class Venue
     {
-        public int Id { get; set; }
+        public int VenueId { get; set; }
+
+        public Guid VenueGuid { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
     }

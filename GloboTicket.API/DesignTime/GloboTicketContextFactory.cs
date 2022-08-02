@@ -12,7 +12,8 @@ namespace GloboTicket.API.DesignTime
         public GloboTicketContext CreateDbContext(string[] args)
         {
             string? connectionString = Environment.GetEnvironmentVariable(AdminConnectionString);
-            
+            //string connectionString = "Server=(local);Initial Catalog=GloboTicket;User=app;Password=apppassword;MultipleActiveResultSets=True;";
+
             if (string.IsNullOrEmpty(connectionString))
             {
                 throw new ApplicationException($"Please set the environment variable {AdminConnectionString}");
@@ -24,6 +25,7 @@ namespace GloboTicket.API.DesignTime
                     sqlOptions.MigrationsAssembly(typeof(ServiceRegistration).Assembly.FullName);
                 })
                 .Options;
+
             return new GloboTicketContext(options, new DesignTimeModelConfiguration());
         }
     }

@@ -8,6 +8,14 @@ internal class VenueConfiguration : IEntityTypeConfiguration<Venue>
 {
     public void Configure(EntityTypeBuilder<Venue> builder)
     {
-        builder.ToTable("VenueTable");
+        builder
+            .HasAlternateKey(v => v.VenueGuid);
+        builder
+            .Property(v => v.Name)
+            .HasMaxLength(100)
+            .IsRequired();
+        builder
+            .Property(v => v.Address)
+            .HasMaxLength(300);
     }
 }

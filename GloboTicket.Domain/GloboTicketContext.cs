@@ -16,6 +16,8 @@ namespace GloboTicket.Domain
         }
 
         public DbSet<Venue> Venue { get; set; }
+        public DbSet<Act> Act { get; set; }
+        public DbSet<Show> Show { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
